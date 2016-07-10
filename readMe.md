@@ -5,13 +5,13 @@ flip :: (a -> b -> c ...... x -> y -> z) -> (z -> y -> x ...... c -> b -> a)
 ```
 ###Install
 
-```npm install partially-applied/flip```
+```npm install @partially-applied/flip```
 
 
 ###Usage
 ```livescript
 
-flip = require 'flip'
+flip = require '@partially-applied/flip'
 
 f = (a,b,c) -> (a + b)*c # generic functions
 
@@ -51,7 +51,7 @@ h = _.compose (f 1),(g 2) # h = (x) -> 2*x + 1
 
 h 5 # 11
 
-flip = require 'flip'
+flip = require '@partially-applied/flip'
 
 
 j = (flip _.compose) (f 1),(g 2) # j = (x) -> (1 + x)*2 
@@ -69,7 +69,7 @@ good question, it is to assist in using `livescript` do syntax:
 
 _ = require 'ramda'
 
-flip = requre 'flip'
+flip = requre '@partially-applied/flip'
 
 compose = flip _.compose
 

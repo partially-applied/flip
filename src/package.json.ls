@@ -1,5 +1,5 @@
 
-name:'flip'
+name:'@partially-applied/flip'
 version:'1.0.0'
 description:'flip all arguments'
 main:'flip.js'
